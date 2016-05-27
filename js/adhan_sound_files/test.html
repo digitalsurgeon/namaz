@@ -1,0 +1,19 @@
+<button onClick="playAdhan()">Play</button>
+<button onClick="pauseAdhan()">Pause</button>
+
+<script src="http://jsconsole.com/remote.js?3F9BF735-BC66-4CDB-BAB2-056532968583"></script>
+<script type="text/javascript">
+var adhan = new Audio('Adhan_AlAqsa.mp3');
+
+function playAdhan() {
+adhan.load()
+adhan.play()
+alert("hi")
+}
+
+function pauseAdhan() {
+adhan.pause()
+}
+
+playAdhan()
+</script>

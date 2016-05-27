@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Namaz.me - Salah/Prayer/Ramadan times for your current city and location</title>
+<meta name="description" content="Get Islamic Muslic Namaz Prayer times for your current city or location on iphone android nokia phones"/>
+<meta name="keywords" content="namaz,salat,islam,times,city,iphone,android,nokia"/>
+
+<meta http-equiv="cache-control" content="private" />
+<meta http-equiv="expires" content="2592000" /> <!-- one month -->
+
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="index,follow" name="robots" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="iwebkit/pics/homescreen.png" rel="apple-touch-icon" />
+<meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+<link href="iwebkit/css/style.css" rel="stylesheet" type="text/css" />
+<script src="iwebkit/javascript/functions.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="topbar">
+		<div id="leftnav"><a href="./"><img alt="home" src="iwebkit/images/home.png"/></a></div>
+		<div id="title"><span id="l.settings">Settings</span></div>
+	</div>
+	
+	<ul class="pageitem" id="noticeView" style="display:none">
+		<li class="textbox"><div id="noticeText"></div></li>
+	</ul>
+
+	<div id="content">
+		<ul class="pageitem">
+			<li class="form">
+				<span id="l.calculationMethod" class="select">Calculation method</span>
+				<select id="calculationMethod" onchange="javascript:handleChange(this);">
+					<!-- these should be same as the ones in prayertime.js -->
+					<option value="Jafari">Shia Ithna Ashari: Ja'fari</option>
+					<option value="Karachi">University of Islamic Sciences, Karachi</option>
+					<option value="ISNA">Islamic Society of North America: ISNA</option>
+					<option value="MWL">Muslim World League / MWL</option>
+					<option value="Makkah">Umm al-Qura, Makkah: default</option>
+					<option value="Egypt">Egyptian General Authority of Survey</option>
+					<option value="Tehran">Institute of Geophysics, University of Tehran</option>
+				</select>
+				<span class="arrow"></span>
+			</li>
+		</ul>
+		
+		<ul class="pageitem">
+			<li class="form">
+				<span id="l.asrMethod" class="select">Asr method</span>
+				<select id="asrMethod" onchange="javascript:handleChange(this);">
+					<!-- these should be same as the ones in prayertime.js -->
+					<option value="Standard">Shafii, Maliki, Jafari and Hanbali: default</option>
+					<option value="Hanafi">Hanafi</option>
+				</select>
+				<span class="arrow"></span>
+			</li>
+		</ul>
+                                                              
+      <ul class="pageitem">
+		  <li class="form">
+			  <span id="l.midnightMethod" class="select">Midnight method</span>
+				  <select id="midNightMethod" onchange="javascript:handleChange(this);">
+					  <!-- these should be same as the ones in prayertime.js -->
+					  <option value="Standard">Shafii, Maliki, Jafari and Hanbali: default</option>
+					  <option value="Hanafi">Hanafi</option>
+				  </select>
+			  <span class="arrow"></span>
+		  </li>
+      </ul>
+
+		<ul class="pageitem">
+			<li class="form">
+				<span id="l.higherLatitudeCalculationMethod" class="select">Higher latitude calculation method</span>
+				<select id="higherLatitudeMethod" onchange="javascript:handleChange(this);">
+					<!-- these should be same as the ones in prayertime.js -->
+					<option value="None">No adjustment</option>
+					<option value="NightMiddle">Midnight method</option>
+					<option value="OneSeventh">OneSeventh method</option>
+					<option value="AngleBased">AngleBased method: default</option>
+				</select>
+				<span class="arrow"></span>
+			</li>
+		</ul>
+		
+		<ul class="pageitem">
+			<li class="form">
+				<span id="l.playAdhan" class="select">Play adhan</span>
+				<select id="playAdhan" onchange="javascript:handleChange(this);">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</select>
+				<span class="arrow"></span>
+			</li>
+		</ul>		
+		
+		<ul class="pageitem">
+			<li class="form">
+				<span id="l.language" class="select" id="l.langguage">Language</span>
+				<select id="lang" onchange="javascript:handleChange(this);">
+					<option value="en">English: default</option>
+					<option value="tr">Türkçe</option>
+					<option value="ar">العربية - incomplete</option>
+					<option value="fa">فارسی - incomplete</option>
+					<option value="ur">اردو - incomplete</option>
+				</select>
+				<span class="arrow"></span>
+			</li>
+		</ul>
+		
+		<ul class="pageitem">
+			<li class="form">
+				<input  type="button" value="" onclick="javascript:resetToDefault();setSelectBoxes();settingsRestoredAlert();">
+					<center><b><span id="l.resetToDefault">Reset to default</span></b></center>
+				</input>
+			</li>
+		</ul>
+		
+		<ul class="pageitem">
+		<li class="textbox">
+		<div>
+		<div id="l.lastRecordedLocation">Your last recorded location:</div><br/>
+		<span id="l.latitude">Latitude</span>=<span id="latitudeView">loading ...</span><br/>
+		<span id="l.longitude">Longitude</span>=<span id="longitudeView">loading ...</span><br/>
+		<span id="l.city">City</span>=<span id="cityView">loading ...</span><br/>
+		<span id="l.country">Country</span>=<span id="countryView">loading ...</span><br/>
+		<span id="l.locationMethod">Location method</span>=<span id="locmethodView">loading ...</span>
+		<br/><br/>
+		<div id="l.locMethodExplanation">W3C Geolocation is the preffered method as it provides greater accuracy. IP Geolocation in some cases is accurate to country levels only.</div>
+		</div>
+		</li>
+		</ul>
+
+	</div>
+	<div id="footer">
+	<a href="http://praytimes.org/calculation/"><div id="l.howPrayerTimesCalculated">How the prayer times are calculated ?</div></a>
+	</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+<script src="js/namaz.me.scripts.combined.js" type="text/javascript"></script>
+<script type="text/javascript">
+$("#noticeView").fadeOut("fast")
+
+var city, country, latitude, longitude, locmethod, settings, locale;
+
+function setLabels() {
+	if (city==null||typeof(city)=="undefined") city="Unknown"; 
+	if (country==null||typeof(country)=="undefined") country="Unknown";
+
+	$("#cityView").text(city)
+	$("#countryView").text(country)	
+	$("#latitudeView").text(latitude)
+	$("#longitudeView").text(longitude)
+	$("#locmethodView").text(locmethod)
+}
+function handleReverseGeocode(placemark) {
+	try {
+		country = placemark.countryName;
+		city = placemark.cityName;
+	}
+	catch (err) {}
+	setLabels();
+}
+function handleGeoLocationApi(position) {
+	locmethod="W3C";
+	latitude = position.coords.latitude;
+	longitude = position.coords.longitude;
+			
+	var url = "rgeo.php?coords=" + latitude + "," + longitude;
+	$.ajax ({
+		url: url,
+		dataType: "json",
+		success: handleReverseGeocode
+	});
+}
+
+function handleIpGeolocationJson(position) {
+	locmethod = "IP"
+	latitude = position.latitude
+	longitude = position.longitude
+	country = position.countryName
+	city = position.cityName	
+	setLabels()
+}
+
+function setSelectBoxSelectionByValue(selectBox, value) {
+	var itemsCount = selectBox.children.length
+    for ( var i = 0 ; i < itemsCount; i ++)
+    {
+        var optionElement = selectBox[i];
+        if (value == optionElement.value)
+        {
+            selectBox.selectedIndex = i;
+            return;
+        }
+    }
+}
+
+function setSelectBoxes() {
+	for (var s in settings.s) {
+		setSelectBoxSelectionByValue(document.getElementById(s),settings.s[s])
+	}
+}
+function handleChange (se) {
+	settings.saveSetting(se.id,se.value)
+	infoNote('Setting saved');
+	if(se.id=="lang") locale.localize(se.value)
+}
+function infoNote(aMsg) {
+	$("#noticeText").text(aMsg)
+	setTimeout(function() {$("#noticeView").fadeToggle("slow", "linear");}, 2000);
+	$("#noticeView").fadeToggle("slow", "linear");
+}
+function settingsRestoredAlert() {
+	infoNote("Settings restored to default.")
+	locale.localize()
+}
+
+settings=new Settings()
+locale=new Locale(settings)
+if (navigator.geolocation==null)
+{
+	$.ajax( { url: "ip2geo.php", dataType: "json", success: handleIpGeolocationJson });
+}
+else
+{
+	navigator.geolocation.getCurrentPosition(handleGeoLocationApi, function() {} );
+}
+
+setSelectBoxes();
+
+window.onload = function() {
+}
+</script>
+
+</body>
+</html>

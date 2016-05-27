@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Namaz.me - Ramadhan alarm, Adhan and Salah (صلات)/Prayer (نماز)/Ramadan 2012 (رمضان) times/vakati for your current city and location, usa</title>
+<meta name="description" content="Get Islamic Muslic Namaz(نماز) Prayer Ramadan(رمضان) times(اوقات) for your current city or location on iphone android nokia phones"/>
+<meta name="keywords" content="ramadan 2012,iftar,Sehur, Sehri, Sahari,Sahur,sahar ,usa,muslim fasting time, namaz time,fasting,namaz,salat,islam,times,city,iphone,android,nokia,اوقات,رمضان,نماز"/>
+<meta http-equiv="expires" content="86400" />
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="index,follow" name="robots"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link href="iwebkit/pics/homescreen.png" rel="apple-touch-icon"/>
+<meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+<meta name="application-name" content="Namaz.me"/>
+<link href="iwebkit/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/namaz.me.css" rel="stylesheet" type="text/css"/>
+<script src="iwebkit/javascript/functions.js" type="text/javascript"></script>
+</head>
+<body>
+	<noscript><p><strong>
+	Namaz.me provides islamic/muslim namaz and salat times for your current city or location, it uses w3c geolocation api and falls back to
+	ip geolocation ( which can be a little less accurate ) the namaz times are calculated using javascript, however your browser
+	doesnt seem to support javascript, if you have turned off javascript please turn it on.
+	</strong></p></noscript>
+	
+	<div id="topbar"><div id="title">Namaz.me</div></div>
+	
+	<div id="content">
+		<ul class="pageitem">
+			<li class="textbox">
+				<span class="header" id="countryname.view"><span id="l.namazSalatTimes">Namaz/Salat times</span></span>
+				<div id="namaz.me.view">Calculating...</div>
+				<div id="countdown"></div>
+			</li>
+			
+			<li class="menu">
+				<a id="ifNav" href="http://islamicfinder.org/world.php">
+					<img alt="Check namaz times from islamic finder" src="iwebkit/thumbs/start.png" />
+				<span class="name">IslamicFinder</span>
+				</a>
+			</li>
+			
+			<li class="menu">
+			<a href="settings.html" title="Adjust settings to better calculte the namaz and salat times">
+				<img alt="Settings" src="iwebkit/thumbs/settings.png" />
+			<span class="name"><span id="l.settings">Settings</span></span>
+			</a>
+			</li>
+			
+			<li class="menu">
+			<a href="about.html" title="About Namaz.me">
+				<img alt="About" src="iwebkit/thumbs/help.png" />
+			<span class="name"><span id="l.about">About</span></span>
+			</a>
+			</li>
+			
+			<li id="adhanControl" class="menu" style="display:none;">
+			<a href="#" title="Stop Adhan" onClick="javascript:stopAdhan()">
+				<img alt="About" src="iwebkit/thumbs/help.png" />
+			<span class="name"><span id="l.stopAdhan">Stop Adhan</span></span>
+			</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="footer">
+		<u><strong><a href="mailto:ahmad.mushtaq@gmail.com?subject=namaz.me">In beta, timmings might be incorrect. Please report bugs!</a></strong></u><br><br>
+		<a href="http://www.greensoftware.net">Made in Pakistan, by GreenSoftware</a>
+	</div>
+	<div id="warning" onClick="javascript:closeInfo();">
+	</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+<script src="js/praytime/praytime.min.js" type="text/javascript"></script>
+<script src="js/namaz.me.scripts.combined.js" type="text/javascript"></script>
+<script src="js/jquery.calendars.pack.js" type="text/javascript"></script>
+<script src="js/jquery.calendars.islamic.pack.js" type="text/javascript"></script>
+<script src="js/jquery.calendars.plus.pack.js" type="text/javascript"></script>
+<script type="text/javascript">
+//--GA code
+var _gaq = _gaq || []
+_gaq.push(['_setAccount', 'UA-616044-10'])
+_gaq.push(['_trackPageview']);
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = 'http://www.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+//--GA Code
+
+var counter = new CountDown()
+var documentTitle=top.document.title
+var adhanPlayer
+var latitude=0
+var longitude=0
+var country=""
+var city=""
+var settings,locale, namazTimesUpdated=false
+
+function showAdhanControlUi(aShow) {
+	var adhanStopButton = document.getElementById("adhanControl")
+	adhanStopButton.style.display = aShow ? "block" : "none"
+}
+function setupPrayerTimesObj()
+{
+	prayTimes.setMethod(settings.calculationMethod())
+	prayTimes.adjust ({ asr: settings.asrMethod(), midNightMethod: settings.midNightMethod(), higherLatitudeMethod: settings.higherLatitudeMethod()})
+}
+function handleSignificantIslamicDates(json) {
+ if (json.success == true && json.values.length > 0) {
+     var e = $("#dateSignificance");
+     if (json.values.length < 2) {
+         e.html("<a href='" + json.values[0].url + "'>" + json.values[0].significance + "</a>");
+     }
+ }   
+}
+function updateNamazMeTimes()
+{
+	var date = new Date()
+	var times = prayTimes.getTimes(date, [latitude, longitude])
+	var list = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha', 'Midnight']
+	
+	var cal = $.calendars.instance("islamic")
+	var today = cal.today();
+	var islamicDate = cal.formatDate("MM d, yyyy",today)
+	
+	$.ajax({ 
+	   url: "history.php?m=" + today.month() + "&d=" + today.day(),
+	   dataType: "json",
+	   success: handleSignificantIslamicDates
+	   })
+
+	var html = '<table id="timetable" align="center">'
+	html += '<tr><th colspan="2">'+ date.toLocaleDateString()+ ' / ' + islamicDate + ' <span id=\'dateSignificance\'></span></th></tr>'
+	for(var i in list)	{
+		var name = locale.ready ? locale.getString("l." + list[i].toLowerCase()) : list[i].toLowerCase()
+		html += '<tr><td>'+ name+ '</td>'
+		html += '<td>'+ times[list[i].toLowerCase()]+ '</td></tr>'
+	}
+	html += '</table>'
+	document.getElementById('namaz.me.view').innerHTML = html
+	namazTimesUpdated=true
+	installAdhanForNextTime()
+}
+function installAdhanForNextTime() {
+	if (settings.playAdhan() === "false") return
+	
+	var currentDateTime = new Date()
+	var currentTimeSinceEpoc = currentDateTime.getTime()
+	
+	var times = prayTimes.getTimes(currentDateTime, [latitude, longitude])
+	var list = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha']
+	
+	var nextPrayTime=0
+	var nextPrayName = list[0]
+	var tempTime = new Date(currentDateTime)
+	for(var i in list)	{
+		var prayTime = times[list[i].toLowerCase()]
+		var split = prayTime.split(":")
+		tempTime.setHours(split[0])
+		tempTime.setMinutes(split[1])
+		var prayTimeSinceEpoc = tempTime.getTime()
+		if ( currentTimeSinceEpoc < prayTimeSinceEpoc) {
+			nextPrayTime = prayTimeSinceEpoc
+			nextPrayName = list[i]
+			break
+		}
+	}
+	
+	var nextPrayTimeDate
+	var milliseconds
+	
+	if (nextPrayTime) {
+		nextPrayTimeDate = new Date(nextPrayTime)
+		milliseconds = nextPrayTimeDate - currentDateTime
+	} else {
+		var tomorrowDateTime = new Date(currentDateTime.getFullYear(), currentDateTime.getMonth(), currentDateTime.getDate()+1,00,00,00);
+		var tomorrowPrayTimes = prayTimes.getTimes(tomorrowDateTime, [latitude, longitude]);
+	
+		var split = tomorrowPrayTimes[list[0].toLowerCase()].split(":")
+		var nextPrayTimeDate = new Date(tomorrowDateTime.getFullYear(), tomorrowDateTime.getMonth(), tomorrowDateTime.getDate(), split[0], split[1])
+
+		milliseconds = nextPrayTimeDate - currentDateTime
+	}
+	
+	if (milliseconds > 0) {
+		counter.start(nextPrayTimeDate, function(o) {counterHandler(nextPrayName,o)} )
+		}
+}
+function counterHandler(name,o) {
+	var h=o["h"],m=o["m"],s=o["s"]
+	if (h==0 && m==0 && s==0) {
+		playAdhan(name)
+	} else {
+		var string=""
+		if (h!=0) string = h+" "+(h>1 ? locale.getString("l.hours"):locale.getString("l.hour"))+", "
+		if (m!=0) string += m+" "+(m>1 ? locale.getString("l.minutes"):locale.getString("l.minute"))+", "
+		if (s!=0) string += s+" "+(s>1 ? locale.getString("l.seconds"):locale.getString("l.second"))+" "
+		top.document.title=h+":"+m+":"+s + " - " + documentTitle
+		string+= locale.getString("l.till") + " " + name
+		document.getElementById("countdown").innerHTML = string
+	}
+}
+function playAdhan(aName) {
+	installAdhanForNextTime()
+	
+	if (adhanPlayer == null) {
+		adhanPlayer = new Adhan()
+		if (adhanPlayer.supportsAudio) {
+			adhanPlayer.installAdhanOverHandler ( function() { showAdhanControlUi(false) } )
+		}
+	}
+	else {
+		adhanPlayer.pause()
+	}
+
+	if (adhanPlayer.supportsAudio) {
+		showAdhanControlUi(true)
+
+		if (aName.toLowerCase() == "fajr") {
+			adhanPlayer.playFajrAdhan()
+		} else {
+			adhanPlayer.playAdhan()
+		}
+	}
+}
+function stopAdhan() {
+	adhanPlayer.pause()		
+	showAdhanControlUi(false)
+}
+function setCountryAndCity() {    
+    var separator = " "
+    if (country.length > 0) {
+    	$("#ifNav").attr("href","http://www.islamicfinder.org/cityPrayerNew.php?country=" + country)
+    
+	    if (city.length > 0) separator = ", ";
+    }
+    
+    var forString = " "
+    if (city.length > 0 || country.length > 0) forString = locale.getString("l.for") + " ";
+  
+  var str=locale.getString("l.namazSalatTimes") + " " + forString + city + separator + country
+  document.getElementById('countryname.view').innerHTML=str
+}
+function handleGeolocationApi(position) {
+	latitude = position.coords.latitude
+	longitude = position.coords.longitude
+	
+	var url = "rgeo.php?coords=" + latitude + "," + longitude
+	$.ajax ({
+		url: url,
+		dataType: "json",
+		success: function (placemark) {
+			country = placemark.countryName
+			city = placemark.cityName
+			updateNamazTimesAndSetCityCountry()
+		}
+	})
+	updateNamazTimesAndSetCityCountry()
+	getTimeForLocation(latitude, longitude)
+}   
+function handleIpGeolocationJson(position){
+	latitude = position.latitude
+	longitude = position.longitude
+	country = position.countryName
+	city = position.cityName
+	
+	updateNamazTimesAndSetCityCountry()
+	getTimeForLocation(latitude, longitude)
+}
+function updateNamazTimesAndSetCityCountry(){
+	if (!namazTimesUpdated && latitude && longitude && locale.ready){
+		updateNamazMeTimes()		
+	}		
+
+	if (locale.ready && (city.length || country.length))
+		setCountryAndCity()
+}
+function performIpGeolocation() {
+	$.ajax({ 
+		   url: "ip2geo.php",
+		   dataType: "json",
+		   success: handleIpGeolocationJson,
+		   error: function() { showInfo("Namaz.me was unable to determine your location! sorry!") }
+		   })
+}
+function handleTime(timeFromServer) {
+	if (timeFromServer !=null && timeFromServer.time != null) {
+
+		timeFromServer = new Date(timeFromServer.time);
+		var localMachineTime = new Date();
+
+		var timeDiff = Math.abs(timeFromServer.getTime() - localMachineTime.getTime()); // seconds
+		timeDiff = Math.floor(timeDiff / (1000*60)); // minutes
+
+		if (timeDiff > 50 ) {
+			showInfo("Your computer time is incorrect! It is incorrect by " + timeDiff + " minutes. Please fix your computer's time. Prayer times will be incorrect until you fix your computer's time.");
+		}
+	}
+}
+function showInfo(text) {
+	var e = $("#warning");
+	$("#warning").html(text)
+	e.fadeToggle();
+}
+function closeInfo() {
+	var e = $("#warning");
+	e.fadeToggle();
+}
+function getTimeForLocation(lat, lon) {
+	var url = "http://api.geonames.org/timezoneJSON?lat="+lat+"&lng="+lon+"&username=digitalsurgeon";
+	$.ajax(
+	{
+		url: url,
+		dataType: "json",
+		success: handleTime,
+		error: function () { handleTime(null) }
+	});
+}
+// execution starts here--
+window.onload = function() {
+	settings=new Settings()
+	locale=new Locale(settings)
+	locale.installLocaleReadyHandler(function() {
+		updateNamazTimesAndSetCityCountry()
+	})
+	setupPrayerTimesObj()
+
+	if (navigator.geolocation != null) {
+		navigator.geolocation.getCurrentPosition(handleGeolocationApi, function() {performIpGeolocation()})
+	} else {
+		performIpGeolocation()
+	}	
+}
+</script>
+
+</body>
+</html>

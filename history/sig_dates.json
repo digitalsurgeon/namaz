@@ -1,0 +1,134 @@
+[
+    {
+        "month": 1,
+        "day": 1,
+        "significance": "Islamic New Year",
+        "url": "http://en.wikipedia.org/wiki/Islamic_New_Year"
+    },
+    {
+    	"month": 1,
+    	"day": 10,
+    	"significance": "Day of Ashura",
+    	"url": "http://en.wikipedia.org/wiki/Day_of_Ashura"
+    },
+    {
+    	"month": 3,
+    	"day": 12,
+    	"significance": "Mawlid an Nabi for most Sunnis",
+    	"url": "http://en.wikipedia.org/wiki/Mawlid"
+    },
+    {
+    	"month": 3,
+    	"day": 17,
+    	"significance": "Mawlid an Nabi for Twelvers and some Sunnis",
+    	"url": "http://en.wikipedia.org/wiki/Mawlid"
+    },
+    {
+    	"month": 6,
+    	"day": 3,
+    	"significance": "Martyrdom of Hazrat Fatimah (P.B.U.H)",
+    	"url": "http://en.wikipedia.org/wiki/Fatimah"
+    },
+    {
+    	"month": 6,
+    	"day": 20,
+    	"significance": "Birth of Hazrat Fatimah (P.B.U.H)",
+    	"url": "http://en.wikipedia.org/wiki/Fatimah"
+    },
+    {
+    	"month": 7,
+    	"day": 13,
+    	"significance": "Birthday of Ali ibn Abi Talib",
+    	"url": "http://en.wikipedia.org/wiki/Ali"
+    },
+    {
+    	"month": 7,
+    	"day": 27,
+    	"significance": "Isra and Mi'raj",
+    	"url": "http://en.wikipedia.org/wiki/Isra_and_Mi%27raj"
+    },
+    {
+    	"month": 8,
+    	"day": 3,
+    	"significance": "Birthday of Husayn ibn Ali",
+    	"url": "http://en.wikipedia.org/wiki/Husayn_ibn_Ali"
+    },
+    {
+    	"month": 8,
+    	"day": 10,
+    	"significance": "Demise of Hazrat Khadijah (P.B.U.H)",
+    	"url": "http://en.wikipedia.org/wiki/Khadija_bint_Khuwaylid"
+    },
+    {
+    	"month": 8,
+    	"day": 15,
+    	"significance": "Mid-Sha'ban, or Night of Forgiveness",
+    	"url": "http://en.wikipedia.org/wiki/Mid-Sha%27ban"
+    },
+    {
+    	"month": 8,
+    	"day": 15,
+    	"significance": "Birthday of Muhammad al-Mahdi",
+    	"url": "http://en.wikipedia.org/wiki/Muhammad_al-Mahdi"
+    },
+    {
+    	"month": 9,
+    	"day": 1,
+    	"significance": "1st of Ramazan",
+    	"url": "http://en.wikipedia.org/wiki/Ramadan"
+    },
+    {
+    	"month": 9,
+    	"day": 21,
+    	"significance": "Ali ibn Abi Talib's martyrdom",
+    	"url": "http://en.wikipedia.org/wiki/Ali"
+    }, 
+    {
+    	"month": 9,
+    	"day": 27,
+    	"significance": "(Nuzul Al-Qur'an) The day Muhammad (PBUH) received the first verses of the Qur'an (17 Ramadan in Indonesia and Malaysia)",
+    	"url": "http://en.wikipedia.org/wiki/Ramadan"
+    }, 
+    {
+        "month": 10,
+    	"day": 1,
+    	"significance": "Eid ul Fitr",
+    	"url": "http://en.wikipedia.org/wiki/Eid_ul-Fitr"   
+    }, 
+    {
+        "month": 12,
+    	"day": 8,
+    	"significance": "Hajj",
+    	"url": "http://en.wikipedia.org/wiki/Hajj"   
+    }, 
+    {
+        "month": 12,
+    	"day": 9,
+    	"significance": "Day of Arafa",
+    	"url": "http://en.wikipedia.org/wiki/Day_of_Arafa"   
+    }, 
+    {
+        "month": 12,
+    	"day": 10,
+    	"significance": "Eid al Adha",
+    	"url": "http://en.wikipedia.org/wiki/Eid_al-Adha"   
+    }, 
+    {
+        "month": 12,
+    	"day": 11,
+    	"significance": "Hajj",
+    	"url": "http://en.wikipedia.org/wiki/Hajj"   
+    }, 
+    {
+        "month": 12,
+    	"day": 12,
+    	"significance": "Hajj",
+    	"url": "http://en.wikipedia.org/wiki/Hajj"   
+    }, 
+    {
+        "month": 12,
+    	"day": 13,
+    	"significance": "Hajj",
+    	"url": "http://en.wikipedia.org/wiki/Hajj"   
+    }
+]

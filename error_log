@@ -1,0 +1,146 @@
+[18-May-2016 01:17:36 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=204.79.180.57&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 04:48:05 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=92.54.210.96&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 04:48:42 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=92.54.210.96&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 09:53:41 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=195.166.116.237&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 09:54:00 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=195.166.116.237&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 11:03:31 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=39.50.177.35&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 11:03:47 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=39.50.177.35&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 11:04:12 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=39.50.177.35&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 13:55:21 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=78.250.72.177&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 14:14:22 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=204.79.180.102&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 21:44:10 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=24.185.59.103&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 21:44:25 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=24.185.59.103&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 21:44:27 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=24.185.59.103&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 21:44:40 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=24.185.59.103&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 21:44:42 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=24.185.59.103&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 21:44:51 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=24.185.59.103&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 21:45:29 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=24.185.59.103&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[18-May-2016 21:45:32 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=24.185.59.103&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[19-May-2016 03:41:33 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=64.233.173.148&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[19-May-2016 04:23:49 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=64.233.173.158&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[19-May-2016 04:25:33 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=64.233.173.148&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[19-May-2016 07:19:58 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=176.54.114.58&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[19-May-2016 07:20:20 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=176.54.114.58&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[19-May-2016 07:20:46 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=176.54.114.58&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[19-May-2016 09:36:37 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=78.250.137.128&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[19-May-2016 16:40:56 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=204.79.180.157&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[20-May-2016 06:13:23 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=160.176.223.14&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[20-May-2016 06:30:17 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=160.176.223.14&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[20-May-2016 06:34:28 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=160.176.223.14&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[20-May-2016 13:41:42 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=204.79.180.116&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[20-May-2016 21:25:14 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=160.177.117.89&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[21-May-2016 09:01:24 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=204.79.180.240&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[21-May-2016 12:45:24 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=78.250.135.45&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[22-May-2016 02:13:47 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=58.27.154.125&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[22-May-2016 04:00:39 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=119.160.97.223&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[22-May-2016 11:46:18 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=5.121.103.145&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[22-May-2016 13:22:20 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=223.227.40.205&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[22-May-2016 15:11:37 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=213.191.24.202&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[22-May-2016 15:57:30 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=41.114.209.185&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[22-May-2016 16:41:12 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=204.79.180.107&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 01:53:48 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=66.249.88.230&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 04:31:23 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=223.227.32.113&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 08:33:14 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=223.227.172.107&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 08:44:44 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=223.227.238.44&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 08:46:02 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=223.227.24.95&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 08:47:23 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=223.227.24.95&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 08:51:21 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=223.227.24.95&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 10:04:07 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=78.209.31.44&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 10:04:15 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=78.209.31.44&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 10:25:32 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=197.229.97.224&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 11:04:28 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=223.227.28.127&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 11:28:24 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=223.227.28.127&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 23:08:06 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=37.155.162.161&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 23:08:51 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=37.155.162.161&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 23:08:53 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=37.155.162.161&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 23:08:57 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=37.155.162.161&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 23:09:01 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=37.155.162.161&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 23:09:04 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=37.155.162.161&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 23:09:04 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=37.155.162.161&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 23:09:12 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=37.155.162.161&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 23:09:15 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=37.155.162.161&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 23:09:17 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=37.155.162.161&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[23-May-2016 23:09:21 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=37.155.162.161&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[24-May-2016 11:14:04 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=141.0.15.178&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[24-May-2016 14:54:34 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=204.79.180.62&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[25-May-2016 11:43:03 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=78.250.146.223&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[25-May-2016 16:51:35 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=204.79.180.231&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[25-May-2016 17:50:59 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=77.13.218.250&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[26-May-2016 09:07:42 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=78.250.206.232&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[26-May-2016 10:01:52 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=77.13.204.211&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[26-May-2016 10:14:55 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=155.94.214.74&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[26-May-2016 14:05:40 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=66.249.88.113&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
+[26-May-2016 20:53:25 America/Denver] PHP Warning:  file_get_contents(http://api.ipinfodb.com/v2/ip_query.php?ip=204.79.180.113&amp;output=xml&amp;key=a8ac40c258f4b1b9fecb27de7f091272979de523868d4b804e4b58ac9a0755b2): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home1/greenso1/public_html/prayertimes/new/ip2geo.php on line 5
