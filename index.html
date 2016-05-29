@@ -247,11 +247,7 @@ function unableToDetermineLocation() {
     showInfo("Namaz.me was unable to determine your location! sorry!");
 }
 function handleGeolocationApi(position) {
-    if (position.success == 0 ) {
-        unableToDetermineLocation();
-        return;
-    }
-	latitude = position.coords.latitude
+   	latitude = position.coords.latitude
 	longitude = position.coords.longitude
 	
 	var url = "rgeo.php?coords=" + latitude + "," + longitude
@@ -268,7 +264,12 @@ function handleGeolocationApi(position) {
 	getTimeForLocation(latitude, longitude)
 }   
 function handleIpGeolocationJson(position){
-	latitude = position.latitude
+    if (position.success == 0 ) {
+        unableToDetermineLocation();
+        return;
+    }
+
+    latitude = position.latitude
 	longitude = position.longitude
 	country = position.countryName
 	city = position.cityName
