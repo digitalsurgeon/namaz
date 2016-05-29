@@ -243,7 +243,14 @@ function setCountryAndCity() {
   var str=locale.getString("l.namazSalatTimes") + " " + forString + city + separator + country
   document.getElementById('countryname.view').innerHTML=str
 }
+function unableToDetermineLocation() {
+    showInfo("Namaz.me was unable to determine your location! sorry!");
+}
 function handleGeolocationApi(position) {
+    if (position.success == 0 ) {
+        unableToDetermineLocation();
+        return;
+    }
 	latitude = position.coords.latitude
 	longitude = position.coords.longitude
 	
@@ -282,7 +289,7 @@ function performIpGeolocation() {
 		   url: "ip2geo.php",
 		   dataType: "json",
 		   success: handleIpGeolocationJson,
-		   error: function() { showInfo("Namaz.me was unable to determine your location! sorry!") }
+		   error: function() { unableToDetermineLocation(); }
 		   })
 }
 function handleTime(timeFromServer) {
